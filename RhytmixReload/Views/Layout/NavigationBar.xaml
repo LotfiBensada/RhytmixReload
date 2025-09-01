@@ -5,36 +5,28 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RhytmixReload.Views.Layout"
              mc:Ignorable="d" 
-             MinHeight="650" MinWidth="80"
+             MinHeight="450" MinWidth="80"
              MaxWidth="150"
              >
-    <Grid >
+    <Grid Margin="0,55,0,55" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="0"  MinHeight="45" MinWidth="45" MaxHeight="50" MaxWidth="50">
-            <Image/>
+        <Button Grid.Row="0"  MinHeight="35" MinWidth="35" MaxHeight="40" MaxWidth="40" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="/Images/home.png"/>
         </Button>
-        <Button Grid.Row="1" Height="45" Width="45" >
-            <Image/>
+        <Button Grid.Row="1" MinHeight="45" MinWidth="45" MaxHeight="40" MaxWidth="40" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="/Images/playlist.png"/>
         </Button>
-        <Button Grid.Row="2" Height="45" Width="45" >
-            <Image/>
+        <Button Grid.Row="2" MinHeight="45" MinWidth="45" MaxHeight="40" MaxWidth="40" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="/Images/Library.png"/>
         </Button>
-        <Button Grid.Row="3" Height="45" Width="45" >
-            <Image/>
-        </Button>
-        <Button Grid.Row="4" Height="45" Width="45" >
-            <Image/>
-        </Button>
-        <Button Grid.Row="5" Height="45" Width="45" >
-            <Image/>
+        <Button Grid.Row="3" MinHeight="45" MinWidth="45" MaxHeight="40" MaxWidth="40" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="/Images/setting.png"/>
         </Button>
     </Grid>
 </UserControl>

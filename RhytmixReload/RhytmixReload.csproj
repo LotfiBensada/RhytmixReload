@@ -9,7 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\home.png" />
+    <None Remove="Images\Library.png" />
+    <None Remove="Images\Liked.png" />
+    <None Remove="Images\NextSong.png" />
+    <None Remove="Images\Pause.png" />
+    <None Remove="Images\playlist.png" />
+    <None Remove="Images\PreviousSong.png" />
+    <None Remove="Images\ProfileIcon.png" />
+    <None Remove="Images\RythMixLogo.png" />
     <None Remove="Images\SearchIcon.png" />
+    <None Remove="Images\setting.png" />
+    <None Remove="Images\SongImage.jfif" />
+    <None Remove="Images\volume.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +29,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\Library.png" />
+    <Resource Include="Images\Liked.png" />
+    <Resource Include="Images\NextSong.png" />
+    <Resource Include="Images\Pause.png" />
+    <Resource Include="Images\playlist.png" />
+    <Resource Include="Images\PreviousSong.png" />
+    <Resource Include="Images\ProfileIcon.png" />
+    <Resource Include="Images\RythMixLogo.png" />
     <Resource Include="Images\SearchIcon.png" />
+    <Resource Include="Images\setting.png" />
+    <Resource Include="Images\SongImage.jfif" />
+    <Resource Include="Images\Volume.png" />
   </ItemGroup>
 
 </Project>

@@ -4,46 +4,51 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RhytmixReload"
-        WindowStyle="None"
-        AllowsTransparency="True"
         Background="Transparent"
         xmlns:Layout="clr-namespace:RhytmixReload.Views.Layout"
         mc:Ignorable="d"
         
         Title="MainWindow" Height="650" Width="1000" MinHeight="644" MinWidth="426" >
 
-    <Border CornerRadius="25" Background="White">
+    <Border  Background="White">
         <Grid ShowGridLines="True">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition  MinWidth="80" MaxWidth="80"/>
-                <ColumnDefinition Width="15*"/>
-            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
 
-            <!-- Navigation Section -->
-            <Layout:NavigationBar Grid.Column="0"/>
-
-
-            <!-- Music Player Section -->
-            <Grid Grid.Column="1" ShowGridLines="True">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="10*"/>
-                </Grid.RowDefinitions>
+            <Grid Grid.Row="0" ShowGridLines="True">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" MinWidth="85"/>
                     <ColumnDefinition Width="5*"/>
-                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1.5*"/>
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="8*"/>
+                </Grid.RowDefinitions>
 
-                <Layout:SearchBar Grid.Row="0" Grid.Column="0"/>
-                <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center">
-                    <Button Width="50" Height="50" Background="Transparent" BorderBrush="Transparent">
+                <Layout:SearchBar Grid.Column="1" Grid.Row="0" />
+
+                <StackPanel Orientation="Horizontal" Grid.Column="2" Margin="15,0,0,0">
+                    <Button Width="45" Height="45" Background="Transparent" BorderBrush="Transparent" Margin="0,0,10,0">
                         <Image Source="/Images/ProfileIcon.png"/>
                     </Button>
+                    <TextBlock Text="User167953" VerticalAlignment="Center" FontWeight="Bold"/>
                 </StackPanel>
+
+
+                <Border Grid.Row="0" Grid.Column="0" Width="50" Height="50" CornerRadius="25">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Images/RythMixLogo.png" Stretch="Fill"/>
+                    </Border.Background>
+                </Border>
+                
+                <Layout:NavigationBar Grid.Column="0" Grid.Row="1"/>
             </Grid>
 
-        </Grid>        
-    </Border>
+            <Layout:MusicPlayerBar Grid.Row="1"/>
 
-    
+        </Grid>
+    </Border>
 </Window>
