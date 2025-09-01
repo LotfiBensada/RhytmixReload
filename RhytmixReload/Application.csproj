@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Interfaces\" />
+    <Folder Include="Images\" />
     <Folder Include="Utilities\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
