@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application.csproj", "{2F40C0F8-D806-41B7-8E9A-AAEDAFB391BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhytmixReload", "RhytmixReload.csproj", "{2F40C0F8-D806-41B7-8E9A-AAEDAFB391BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\Core\Core.csproj", "{3061E18C-E349-4FE3-94D4-35214C82F938}"
 EndProject

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="RhytmixReload.Views.Layout.SearchBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RhytmixReload.Views.Layout"
+             mc:Ignorable="d" 
+             Height="35"  MinWidth="300" MaxWidth="600" Margin="15,0,15,0">
+    
+    <Border CornerRadius="10" Background="LightGray">
+        <Grid>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" Width="25" Height="25" Source="/Images/SearchIcon.png"/>
+            <TextBox Grid.Column="1" Margin="5" Text="Search Artist, albums, song..." VerticalContentAlignment="Center"/>
+            
+        </Grid>
+    </Border>
+</UserControl>
