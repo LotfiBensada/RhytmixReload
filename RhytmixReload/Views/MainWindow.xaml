@@ -4,13 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RhytmixReload"
+        WindowStyle="None"
+        AllowsTransparency="True"
         Background="Transparent"
+        ResizeMode="CanResizeWithGrip"
         xmlns:Layout="clr-namespace:RhytmixReload.Views.Layout"
         mc:Ignorable="d"
-        
         Title="MainWindow" Height="650" Width="1000" MinHeight="644" MinWidth="426" >
 
-    <Border  Background="White">
+    <Border  Background="White" CornerRadius="8" BorderBrush="White" BorderThickness="5">
         <Grid ShowGridLines="True">
             <Grid.RowDefinitions>
                 <RowDefinition Height="8*"/>
@@ -24,13 +26,14 @@
                     <ColumnDefinition Width="1.5*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="57*"/>
+                    <RowDefinition Height="506*"/>
                 </Grid.RowDefinitions>
 
-                <Layout:SearchBar Grid.Column="1" Grid.Row="0" />
+                <Layout:SearchBar Grid.Column="1" Grid.Row="1" Margin="15,8,15,14" />
 
-                <StackPanel Orientation="Horizontal" Grid.Column="2" Margin="15,0,0,0">
+                <StackPanel Orientation="Horizontal" Grid.Column="2" Margin="15,0,0,0" Grid.RowSpan="2">
                     <Button Width="45" Height="45" Background="Transparent" BorderBrush="Transparent" Margin="0,0,10,0">
                         <Image Source="/Images/ProfileIcon.png"/>
                     </Button>
@@ -38,13 +41,13 @@
                 </StackPanel>
 
 
-                <Border Grid.Row="0" Grid.Column="0" Width="50" Height="50" CornerRadius="25">
+                <Border Grid.Row="1" Grid.Column="0" Width="50" Height="50" CornerRadius="25" Margin="18,1,17,6">
                     <Border.Background>
                         <ImageBrush ImageSource="/Images/RythMixLogo.png" Stretch="Fill"/>
                     </Border.Background>
                 </Border>
-                
-                <Layout:NavigationBar Grid.Column="0" Grid.Row="1"/>
+
+                <Layout:NavigationBar Grid.Column="0" Grid.Row="1" Margin="0,57,0,0" Grid.RowSpan="2"/>
             </Grid>
 
             <Layout:MusicPlayerBar Grid.Row="1"/>
